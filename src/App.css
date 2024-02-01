@@ -10,8 +10,10 @@ body {
 .cont {
   max-width: 1268px;
   /* max-width: 600px; */
-  width: 90%;
-  margin: 50px auto;
+  width: 95%;
+  
+  /* height:100%; */
+  /* margin: 50px auto; */
   padding: 20px;
   /* background-color: whitesmoke; */
   background-color: #e4f2fb;
@@ -19,12 +21,11 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
   margin: 20px auto;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
+  /* height: 85vh; */
 }
 .gallery {
   text-align: center;
+  transition: translate(-50%,-50%);
 }
 .row {
   display: flex;
@@ -37,11 +38,12 @@ h5{
 }
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  margin: 25px 15px;
   transition: transform 0.3s;
   flex: 0 1 calc(25% - 20px);
   max-width: calc(25% - 20px);
   box-sizing: border-box;
+  border-radius: 8px;
 }
 .card:hover {
   transform: scale(1.05);
@@ -49,6 +51,10 @@ h5{
 .card-img-top {
   max-height: 200px;
   object-fit: cover;
+  width: 275px;
+  height: 500px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 h1 {
   width: 90%;
@@ -89,6 +95,31 @@ b{
     background-position: 50%;
   }
 }
+.card {
+  position: relative;
+}
+
+.des{
+  position: absolute;
+    left: 100px;
+    bottom:30px;
+    /* top:10; */
+    /* right:10; */
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    /* margin-bottom: 15%; */
+    /* transition: translate(-50%, -50%); */
+}
+.view-link{
+  color:#fff;
+}
+.card:hover .des {
+  display: block;
+  transition: translate(-50%, -50%);
+}
+
 h2{
   text-align: center;
 }
